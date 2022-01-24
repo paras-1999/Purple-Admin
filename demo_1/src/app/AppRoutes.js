@@ -1,12 +1,12 @@
-import React, { Component, Suspense, lazy } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import Spinner from '../app/shared/Spinner';
-const Dashboard = lazy(() => import('./dashboard/Dashboard'));
-const Error404 = lazy(() => import('./error-pages/Error404'));
-const Error500 = lazy(() => import('./error-pages/Error500'));
-const Login = lazy(() => import('./user-pages/Login'));
-const Register1 = lazy(() => import('./user-pages/Register'));
-const Lockscreen = lazy(() => import('./user-pages/Lockscreen'));
+import React, { Component, Suspense, lazy } from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
+import Spinner from "../app/shared/Spinner";
+const Dashboard = lazy(() => import("./dashboard/Dashboard"));
+const Error404 = lazy(() => import("./error-pages/Error404"));
+const Error500 = lazy(() => import("./error-pages/Error500"));
+const Login = lazy(() => import("./user-pages/Login"));
+const Register1 = lazy(() => import("./user-pages/Register"));
+const Lockscreen = lazy(() => import("./user-pages/Lockscreen"));
 class AppRoutes extends Component {
   render() {
     return (
